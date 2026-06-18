@@ -1,19 +1,13 @@
 pipeline {
-
     agent any
 
     stages {
 
-        stage('Checkout') {
+        stage('Build') {
             steps {
-                git "https://github.com/AbhishekDixitt18/ETP-CSV302.git"
+                sh 'mvn clean test'
             }
         }
 
-        stage('Build') {
-            steps {
-                bat 'mvn clean test'
-            }
-        }
     }
 }
