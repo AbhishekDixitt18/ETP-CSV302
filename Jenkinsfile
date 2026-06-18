@@ -6,7 +6,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/USERNAME/selenium-jenkins-demo.git'
+                git "https://github.com/AbhishekDixitt18/ETP-CSV302.git"
             }
         }
 
